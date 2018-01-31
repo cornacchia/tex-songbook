@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{stackengine}
+\usepackage{pgffor}
+\usepackage{titlesec}
+
+\def \numberOfPages {3}
+
+\title{Songbook}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Large}
+
+\begin{document}
+
+    \maketitle
+
+    \tableofcontents{}
+    \newpage
+
+    \foreach \c in {1,...,\numberOfPages} {
+      \input{texsongs/\c.tex}
+    }
+
+\end{document}

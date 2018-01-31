@@ -1,0 +1,11 @@
+.vscode
+sources/*
+texsongs
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.pdf
+*.gz
+*.toc
+*.sty
